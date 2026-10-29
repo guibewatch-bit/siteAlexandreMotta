@@ -1,0 +1,42 @@
+# Configuração para hospedagem Apache/LiteSpeed (Hostinger, HostGator, Locaweb etc.)
+# Em Netlify, Vercel ou Cloudflare Pages este arquivo é ignorado.
+
+# Força HTTPS e o endereço com www
+RewriteEngine On
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ https://www.dralexandremotta.com/$1 [R=301,L]
+
+# Endereços antigos do site em Wix apontam para a seção certa da página nova
+# (a flag NE mantém o "#" da âncora sem codificar)
+RewriteRule ^home/?$ / [R=301,L]
+RewriteRule ^blank-1/?$ /#sobre [NE,R=301,L]
+RewriteRule ^doen.*neuromusculares/?$ /#areas [NE,R=301,L]
+RewriteRule ^c.{1,2}pia- /#condicoes [NE,R=301,L]
+RewriteRule ^dores-de-cabe /#condicoes [NE,R=301,L]
+RewriteRule ^post/ / [R=301,L]
+RewriteRule ^blog/?$ / [R=301,L]
+
+# Página de erro
+ErrorDocument 404 /404.html
+
+# Compressão
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript image/svg+xml text/plain application/xml
+</IfModule>
+
+# Cache: imagens por 1 ano, HTML sempre atualizado
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+
+# Segurança básica
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+</IfModule>

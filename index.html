@@ -165,7 +165,7 @@ p{margin:0}
 @media (max-width:520px){.hero .acoes .btn{width:100%}.retrato .curva{display:none}}
 @media (max-width:440px){.hero{padding-top:16px}.retrato .foto{height:min(38vh,300px)}.hero h1{font-size:29px}.hero .sub{font-size:16.5px;line-height:1.55}.hero .acoes{margin-top:20px}.topo .wrap{height:64px}}
 
-@media (max-width:899px) and (max-height:700px){.retrato .foto{height:220px}.hero h1{font-size:27px}}
+@media (max-width:899px) and (max-height:700px){.retrato .foto{height:200px}.hero h1{font-size:27px}}
 /* Credenciais */
 .credenciais{background:var(--petroleo);color:#fff;padding:28px 0}
 .credenciais ul{list-style:none;margin:0;padding:0;display:grid;gap:18px 32px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
@@ -173,7 +173,8 @@ p{margin:0}
 .credenciais svg{flex:none;width:22px;height:22px;margin-top:1px;color:var(--turquesa)}
 .credenciais strong{display:block;font-weight:600}
 .credenciais span{color:#B9D3D5}
-@media (max-width:620px){.credenciais ul{grid-template-columns:1fr 1fr}.credenciais li{font-size:14px}}
+@media (max-width:620px){.credenciais ul{grid-template-columns:1fr 1fr}.credenciais li{font-size:14px}.credenciais li div{min-width:0;overflow-wrap:anywhere;hyphens:auto}}
+@media (max-width:360px){.credenciais ul{grid-template-columns:1fr}}
 
 /* Condições */
 .condicoes{display:grid;gap:0 48px;margin:0;padding:0;list-style:none}
@@ -404,7 +405,7 @@ p{margin:0}
     <ul>
       <li class="rv" style="--i:0"><svg aria-hidden="true"><use href="#i-check"/></svg><div><strong>Residência em Neurologia</strong><span>UNICAMP</span></div></li>
       <li class="rv" style="--i:1"><svg aria-hidden="true"><use href="#i-check"/></svg><div><strong>Membro titular</strong><span>Academia Brasileira de Neurologia</span></div></li>
-      <li class="rv" style="--i:2"><svg aria-hidden="true"><use href="#i-check"/></svg><div><strong>Chefe do Ambulatório de Neuroinfectologia</strong><span>UNICAMP</span></div></li>
+      <li class="rv" style="--i:2"><svg aria-hidden="true"><use href="#i-check"/></svg><div><strong>Equipe de Neuromuscular e preceptor de eletroneuromiografia</strong><span>UNICAMP</span></div></li>
       <li class="rv" style="--i:3"><svg aria-hidden="true"><use href="#i-check"/></svg><div><strong>Presencial, vídeo e domicílio</strong><span>Campinas e região</span></div></li>
     </ul>
   </div>
@@ -417,10 +418,10 @@ p{margin:0}
       <p>Avaliação, diagnóstico e acompanhamento de sintomas e doenças neurológicas em adultos.</p>
     </div>
     <ul class="condicoes fechada" id="lista-condicoes">
-      <li class="rv" style="--i:0"><svg class="arco" aria-hidden="true"><use href="#i-arco"/></svg><h3>Dores de cabeça e enxaqueca</h3><p>Identificar o tipo de dor e montar um plano para reduzir as crises.</p></li>
-      <li class="rv" style="--i:1"><svg class="arco" aria-hidden="true"><use href="#i-arco"/></svg><h3>Tontura e vertigem</h3><p>Investigar a causa e tratar de forma direcionada.</p></li>
-      <li class="rv" style="--i:2"><svg class="arco" aria-hidden="true"><use href="#i-arco"/></svg><h3>Memória e demências</h3><p>Avaliação cognitiva e orientação para paciente e família.</p></li>
-      <li class="rv" style="--i:3"><svg class="arco" aria-hidden="true"><use href="#i-arco"/></svg><h3>Formigamentos e fraqueza muscular</h3><p>Investigação de nervos e músculos.</p></li>
+      <li class="rv" style="--i:0"><svg class="arco" aria-hidden="true"><use href="#i-arco"/></svg><h3>Dores de cabeça e enxaqueca</h3><p>Planos personalizados e exclusivos de acompanhamento, com objetivo de reduzir crises e melhorar a qualidade de vida.</p></li>
+      <li class="rv" style="--i:1"><svg class="arco" aria-hidden="true"><use href="#i-arco"/></svg><h3>Tratamento com toxina botulínica</h3><p>Para enxaqueca, espasticidade, distonia, dores crônicas e hipersalivação.</p></li>
+      <li class="rv" style="--i:2"><svg class="arco" aria-hidden="true"><use href="#i-arco"/></svg><h3>Formigamentos e fraqueza muscular</h3><p>Diagnóstico especializado e tratamento de doenças neuromusculares, dos nervos e músculos do corpo.</p></li>
+      <li class="rv" style="--i:3"><svg class="arco" aria-hidden="true"><use href="#i-arco"/></svg><h3>Memória e demências</h3><p>Avaliação cognitiva e orientação para paciente e família.</p></li>
       <li class="rv" style="--i:4"><svg class="arco" aria-hidden="true"><use href="#i-arco"/></svg><h3>Insônia e problemas de sono</h3><p>Avaliação das causas e orientação de tratamento.</p></li>
       <li class="rv" style="--i:5"><svg class="arco" aria-hidden="true"><use href="#i-arco"/></svg><h3>Convulsões e epilepsia</h3><p>Investigação de crises e ajuste do tratamento.</p></li>
       <li class="rv" style="--i:6"><svg class="arco" aria-hidden="true"><use href="#i-arco"/></svg><h3>AVC</h3><p>Acompanhamento após o AVC e controle de fatores de risco.</p></li>
@@ -450,7 +451,7 @@ p{margin:0}
         </div>
         <div class="corpo">
           <h3>Presencial</h3>
-          <p>Em Campinas, nas clínicas Livance e Salève, com consulta personalizada e retorno incluso.</p>
+          <p>Em Campinas, na clínica Salève, com consulta personalizada e retorno incluso.</p>
           <span class="tag">Retorno incluso</span>
         </div>
       </article>
@@ -490,12 +491,13 @@ p{margin:0}
     <div class="texto">
       <h2 class="rv">Prazer, sou o Dr. Alexandre Motta</h2>
       <p class="rv">Sou médico neurologista, com residência em Neurologia pela UNICAMP e subespecialização em Neurofisiologia, com ênfase em doenças neuromusculares e neurogenéticas.</p>
-      <p class="rv">Hoje sou médico assistente e chefe do Ambulatório de Neuroinfectologia da UNICAMP, membro titular da Academia Brasileira de Neurologia e faço doutorado em Fisiopatologia Médica, pesquisando doenças neuromusculares. Esse vínculo com o ensino e a pesquisa me mantém atualizado sobre os tratamentos mais recentes.</p>
+      <p class="rv">Hoje sou médico assistente da equipe de neuromuscular e preceptor de eletroneuromiografia da UNICAMP, membro titular da Academia Brasileira de Neurologia e faço doutorado em Fisiopatologia Médica, pesquisando doenças neuromusculares. Esse vínculo com o ensino e a pesquisa me mantém atualizado sobre os tratamentos mais recentes.</p>
       <p class="extra rv" id="sobre-extra">No consultório, meu compromisso é que você entenda sua condição e participe das decisões sobre o seu tratamento. Cada paciente tem sua história, seus limites e seu ritmo, e é assim que eu procuro cuidar de cada um.</p>
       <button class="mais" type="button" aria-expanded="false" aria-controls="sobre-extra">Ler mais</button>
       <ul class="formacao rv">
         <li><b>Residência em Neurologia</b> · UNICAMP</li>
         <li><b>Subespecialização em Neurofisiologia</b> · UNICAMP</li>
+        <li><b>Preceptor de novos residentes de neurologia</b> · UNICAMP</li>
         <li><b>Doutorado em andamento</b> · Fisiopatologia Médica</li>
         <li><b>Membro titular</b> · Academia Brasileira de Neurologia</li>
       </ul>
@@ -511,10 +513,10 @@ p{margin:0}
       <p>Além da neurologia geral, o Dr. Alexandre se dedica a casos que pedem formação específica.</p>
     </div>
     <ul class="areas">
-      <li class="rv" style="--i:0"><h3>Doenças neuromusculares</h3><p>Foco da subespecialização e da pesquisa de doutorado.</p></li>
-      <li class="rv" style="--i:1"><h3>Doenças neurogenéticas</h3><p>Investigação e acompanhamento de condições hereditárias.</p></li>
-      <li class="rv" style="--i:2"><h3>Eletroneuromiografia</h3><p>Exame que avalia nervos e músculos, indicado em casos de formigamento, dormência e fraqueza.</p></li>
-      <li class="rv" style="--i:3"><h3>Toxina botulínica</h3><p>Aplicação com indicação neurológica, conforme avaliação.</p></li>
+      <li class="rv" style="--i:0"><h3>Doenças neuromusculares</h3><p>Membro da equipe de Neuromuscular da UNICAMP e foco da pesquisa de doutorado.</p></li>
+      <li class="rv" style="--i:1"><h3>Eletroneuromiografia</h3><p>Exame que avalia nervos e músculos, feito por preceptor de eletroneuromiografia da UNICAMP.</p></li>
+      <li class="rv" style="--i:2"><h3>Toxina botulínica</h3><p>Aplicação para enxaqueca, espasticidade, distonia, dores crônicas e hipersalivação, conforme avaliação.</p></li>
+      <li class="rv" style="--i:3"><h3>Doenças neurogenéticas</h3><p>Investigação e acompanhamento de condições hereditárias.</p></li>
     </ul>
   </div>
 </section>
@@ -523,7 +525,7 @@ p{margin:0}
   <div class="wrap">
     <div class="intro rv"><h2>Por que agendar com o Dr. Alexandre</h2></div>
     <ul class="difs">
-      <li class="rv" style="--i:0"><span class="ic"><svg aria-hidden="true"><use href="#i-capelo"/></svg></span><h3>Formação e atuação na UNICAMP</h3><p>Residência, subespecialização e trabalho atual como chefe de ambulatório.</p></li>
+      <li class="rv" style="--i:0"><span class="ic"><svg aria-hidden="true"><use href="#i-capelo"/></svg></span><h3>Formação e atuação na UNICAMP</h3><p>Residência, subespecialização e trabalho como preceptor de novos residentes de neurologia.</p></li>
       <li class="rv" style="--i:1"><span class="ic"><svg aria-hidden="true"><use href="#i-fala"/></svg></span><h3>Você entende o seu diagnóstico</h3><p>A consulta termina com explicação clara e decisões tomadas junto com você.</p></li>
       <li class="rv" style="--i:2"><span class="ic"><svg aria-hidden="true"><use href="#i-relogio"/></svg></span><h3>Pontualidade e atenção</h3><p>Atendimento no horário marcado e com tempo para as suas dúvidas.</p></li>
       <li class="rv" style="--i:3"><span class="ic"><svg aria-hidden="true"><use href="#i-retorno"/></svg></span><h3>Retorno incluso</h3><p>Reavaliação dentro do prazo combinado na consulta.</p></li>
